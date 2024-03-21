@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { LoginComponent } from './login/login.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 
 export const routes: Routes = [
-  { path: '', component: LoginComponent },
-  { path: 'dashboard', component: DashboardComponent },
+    { path: 'student-dashboard', component: StudentDashboardComponent },
+    { path: 'admin-dashboard', component: AdminDashboardComponent},
 ];
