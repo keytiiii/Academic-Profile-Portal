@@ -1,0 +1,30 @@
+body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+    height: 84%;
+    width: 220px;
+    position: fixed;
+    margin-top: 80px;
+    margin-left: -15px;
+    z-index: 1;
+    background-color: #3f44a2;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-radius: 10px;
+  }
+  
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+  }
+  
+  .sidebar a:hover {
+    color: #000000;
+  }
+
+
