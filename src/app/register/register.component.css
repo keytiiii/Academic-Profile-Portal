@@ -1,5 +1,6 @@
 body {
     background-color: rgba(72,97,162);
+    margin: 0px;
 }
 
 .form-container{
@@ -70,10 +71,11 @@ body {
 .form-container form p a{
     color: crimson;
 }
+
 img {
     width: 450px;
     height: auto;
     float: left;
     margin-left: 200px;
     margin-top: 125px;
-}
+  }

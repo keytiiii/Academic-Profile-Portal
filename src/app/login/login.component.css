@@ -1,13 +1,19 @@
 body {
-  background-color: rgba(72,97,162);
+  background-color: rgba(72, 97, 162);
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 .form-container{
-  margin-top: 210px;
+  margin-top: 0%;
   display: flex;
   justify-content: right;
-  margin-right: 80px;
-
+  margin-right: 0px;
+  
 }
 
 .form-container form{
