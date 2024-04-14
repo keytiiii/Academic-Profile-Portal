@@ -3,6 +3,13 @@ body {
     margin: 0px;
 }
 
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
 .form-container{
     display: flex;
     justify-content: right;
@@ -76,6 +83,6 @@ img {
     width: 450px;
     height: auto;
     float: left;
-    margin-left: 200px;
-    margin-top: 125px;
+    margin-left: 0px;
+    margin-right: 170px;
   }
