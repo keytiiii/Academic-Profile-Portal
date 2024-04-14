@@ -95,12 +95,12 @@ img.move {
 
 @keyframes zoomOutAndMoveLeft {
     0% {
-        transform: scale(1); /* Initial scale (original size) */
+        transform: scale(1);
     }
     50% {
-        transform: scale(0.64); /* Halfway zoomed out */
+        transform: scale(0.64);
     }
     100% {
-        transform: scale(0.64) translateX(-50%); /* Zoomed out and moved to the left */
+        transform: scale(0.64) translateX(-50%);
     }
 }
