@@ -1,0 +1,106 @@
+body {
+    background-color: rgba(72, 97, 162);
+    margin: 0;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .form-container{
+    margin-top: 0%;
+    display: flex;
+    justify-content: right;
+    margin-right: 0px;
+    
+  }
+  
+  .form-container form{
+    padding:20px;
+    border-radius: 50px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    background: #fff;
+    text-align: center;
+    width: 500px;
+  }
+  
+  .form-container form h3{
+    font-size: 24px;
+    font-family: Arial;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .form-container form input{
+    border-radius: 100px;
+    width: 60%;
+    padding:10px 15px;
+    font-size: 15px;
+    margin:8px 0;
+    font-family: Arial;
+    background: #eee;
+  }
+  
+  .form-container form select{
+    width: 60%;
+    padding:10px 15px;
+    font-size: 17px;
+    margin:8px 0;
+    background: #eee;
+    text-align:center; 
+  }
+  
+  .form-container form select{
+    background: #fff;
+  }
+  
+  .form-container form .form-btn{
+    background: #fbd0d9;
+    color: crimson;
+    text-transform: capitalize;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .form-container form .form-btn:hover{
+    background: crimson;
+    color: #fff;
+  }
+  
+  .form-container form p{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .form-container form p a{
+    color: crimson;
+  }
+  
+img {
+    width: 1000px;
+    height: auto;
+    margin: 0;
+    transition: transform 1s ease, width 1s ease;
+}
+
+img.move {
+    width: 450px;
+    transform: translateX(-50%);
+    animation: zoomOutAndMoveLeft 2s forwards;
+}
+
+@keyframes zoomOutAndMoveLeft {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.64);
+    }
+    100% {
+        transform: scale(0.64) translateX(-50%);
+    }
+}
