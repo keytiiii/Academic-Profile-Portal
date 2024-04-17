@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './welcome.component.css'
 })
 export class WelcomeComponent {
+  showContainer: boolean = false;
+
+  showForm() {
+    this.showContainer = true;
+  }
 
 }

@@ -10,11 +10,19 @@ body {
     height: 100vh;
   }
 
+  .image-container {
+    width: 450px;
+    height: auto;
+    margin-right: 55px;
+    margin-top: 3px;
+  }
+
   .form-container{
     margin-top: 0%;
     display: flex;
     justify-content: right;
     margin-right: 0px;
+    animation: fadeInContainer 3s forwards;
     
   }
   
@@ -88,7 +96,7 @@ img {
 }
 
 img.move {
-    width: 450px;
+    width: 703px;
     transform: translateX(-50%);
     animation: zoomOutAndMoveLeft 2s forwards;
 }
@@ -103,4 +111,16 @@ img.move {
     100% {
         transform: scale(0.64) translateX(-50%);
     }
+}
+
+@keyframes fadeInContainer {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
