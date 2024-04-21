@@ -13,5 +13,4 @@ export class WelcomeComponent {
   showForm() {
     this.showContainer = true;
   }
-
 }
