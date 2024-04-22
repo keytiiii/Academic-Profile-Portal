@@ -1,6 +1,5 @@
-
-
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms'; // Add this import
 import { SettingsComponent } from './settings.component';
 
 describe('SettingsComponent', () => {
@@ -9,7 +8,8 @@ describe('SettingsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SettingsComponent ]
+      declarations: [ SettingsComponent ],
+      imports: [ FormsModule ] // Add FormsModule here
     })
     .compileComponents();
   });
@@ -23,6 +23,4 @@ describe('SettingsComponent', () => {
   it('should create the component', () => {
     expect(component).toBeTruthy();
   });
-
-
 });
