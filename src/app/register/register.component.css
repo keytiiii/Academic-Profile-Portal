@@ -15,25 +15,25 @@ body {
     justify-content: right;
     margin-right: 80px;
     animation: fadeInContainer 3s forwards;
-}
-
-.form-container form{
+  }
+  
+  .form-container form{
     padding:20px;
     border-radius: 50px;
     box-shadow: 0 5px 10px rgba(0,0,0,.1);
     background: #fff;
     text-align: center;
     width: 500px;
-}
-
-.form-container form h3{
+  }
+  
+  .form-container form h3{
     font-size: 24px;
-    font-family: Arial;
+    font-family: Poppins;
     margin-bottom: 10px;
     color: #333;
-}
-
-.form-container form input{
+  }
+  
+  .form-container form input{
     border-radius: 100px;
     width: 60%;
     padding:10px 15px;
@@ -41,57 +41,57 @@ body {
     margin:8px 0;
     font-family: Arial;
     background: #eee;
-}
-
-.form-container form select{
+  }
+  
+  .form-container form select{
     width: 60%;
     padding:10px 15px;
     font-size: 17px;
     margin:8px 0;
     background: #eee;
     text-align:center; 
-}
-
-.form-container form select{
+  }
+  
+  .form-container form select{
     background: #fff;
-}
-
-.form-container form .form-btn{
+  }
+  
+  .form-container form .form-btn{
     background: #fbd0d9;
     color: crimson;
     text-transform: capitalize;
     font-size: 15px;
     cursor: pointer;
-}
-
-.form-container form .form-btn:hover{
+  }
+  
+  .form-container form .form-btn:hover{
     background: crimson;
     color: #fff;
-}
-
-.form-container form p{
+  }
+  
+  .form-container form p{
     margin-top: 10px;
     font-size: 20px;
     color: #333;
-}
-
-.form-container form p a{
+  }
+  
+  .form-container form p a{
     color: crimson;
-}
-
-img {
+  }
+  
+  img {
     width: 450px;
     height: auto;
     float: left;
     margin-left: 0px;
     margin-right: 170px;
   }
-
-@keyframes fadeInContainer {
-  0% {
-    opacity: 0;
+  
+  @keyframes fadeInContainer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-  100% {
-    opacity: 1;
-  }
-}
