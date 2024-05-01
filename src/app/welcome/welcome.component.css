@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 body {
-  background-color: rgba(72, 97, 162);
+  background-color: #4861a2;
   margin: 0;
+  color: white;
+}
+
+.wrapper, .form-container {
+  font-family: 'Poppins', sans-serif;
+  color: white;
 }
 
 .wrapper {
@@ -29,7 +37,7 @@ body {
   padding:20px;
   border-radius: 50px;
   box-shadow: 0 5px 10px rgba(0,0,0,.1);
-  background: #fff;
+  background: #4861a2;
   text-align: center;
   width: 500px;
 }
@@ -42,14 +50,26 @@ body {
 }
 
 .form-container form input{
+  background-color: #d1d1d1;
   border-radius: 100px;
   width: 60%;
   padding:10px 15px;
+  margin: 5px;
+  color: black;
 }
 
-.form-container form .form-btn:hover{
-  background: crimson;
-  color: #fff;
+.form-container form .form-btn {
+  background: blue;
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.form-container form .form-btn:hover {
+  background: rgb(0, 0, 111);
+  transform: scale(1.1);
 }
 
 .form-container form p{
