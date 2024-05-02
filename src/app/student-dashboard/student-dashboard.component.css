@@ -1,13 +1,14 @@
 .background{
   background-color: #4861a2;
+  width: auto;
+  height: 100vh;
 }
 
 .image-container {
     display: flex;
     justify-content: center;
     align-items: flex-start; 
-    width: auto;
-    height: 100vh;
+    flex-wrap: ;
 }
 
 img {

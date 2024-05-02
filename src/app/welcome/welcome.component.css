@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-html, body {
+body {
   background-color: #4861a2;
   margin: 0;  
   padding: 0;
+  color: white;
+}
+
+h3 {
+  font-size: 25px; 
+  font-weight: bold; 
   color: white;
 }
 
@@ -19,7 +25,6 @@ html, body {
   height: 100vh;
   overflow: hidden;
 }
-
 
 .image-container {
   width: 450px;
