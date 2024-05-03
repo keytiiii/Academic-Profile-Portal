@@ -1,23 +1,16 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { TopbarComponent } from './topbar.component';
-import { StudentDashboardComponent } from '../student-dashboard/student-dashboard.component';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
-describe('TopbarComponent', () => {
-  let component: TopbarComponent;
-  let fixture: ComponentFixture<TopbarComponent>;
+@Component({
+  selector: 'app-topbar',
+  templateUrl: './topbar.component.html',
+  styleUrls: ['./topbar.component.css']
+})
+export class TopbarComponent {
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [TopbarComponent]
-    })
-    .compileComponents();
-    
-    fixture = TestBed.createComponent(TopbarComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+  constructor(private router: Router) {}
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+  redirectToDashboard() {
+    this.router.navigate(['/student-dashboard']);
+  }
+}
