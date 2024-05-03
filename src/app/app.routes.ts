@@ -9,10 +9,11 @@ import { NotfoundComponent } from './notfound/notfound.component';
 
 export const routes: Routes = [
    { path: '', redirectTo: 'welcome', pathMatch: 'full'},
-    { path: 'welcome', component: WelcomeComponent},
-    { path: 'student-dashboard', component: StudentDashboardComponent },
-    { path: 'admin-dashboard', component: AdminDashboardComponent},
-    { path: 'register', component: RegisterComponent},
-    { path: 'login', component: LoginComponent},
-    { path: 'portfolio', component: PortfolioComponent},
-]
+   { path: 'welcome', component: WelcomeComponent},
+   { path: 'student-dashboard', component: StudentDashboardComponent },
+   { path: 'admin-dashboard', component: AdminDashboardComponent},
+   { path: 'register', component: RegisterComponent},
+   { path: 'login', component: LoginComponent},
+   { path: 'portfolio', component: PortfolioComponent},
+   { path: '**', component: NotfoundComponent } // Redirect to NotFoundComponent for unknown routes
+];
