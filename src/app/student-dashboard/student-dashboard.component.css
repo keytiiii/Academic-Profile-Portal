@@ -1,13 +1,16 @@
-.background {
-    background-color: #000;
-    height: 100vh;
-    width: 100%;
-  }
+.background{
+  background-color: #4861a2;
+  width: auto;
+  height: 100vh;
+}
 
 .image-container {
     display: flex;
     justify-content: center;
-    align-items: center; 
-    height: 350px; 
-    width: auto;
+    align-items: flex-start; 
+    flex-wrap: ;
+}
+
+img {
+  margin-top: 80px;
 }

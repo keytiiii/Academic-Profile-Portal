@@ -2,7 +2,14 @@
 
 body {
   background-color: #4861a2;
-  margin: 0;
+  margin: 0;  
+  padding: 0;
+  color: white;
+}
+
+h3 {
+  font-size: 25px; 
+  font-weight: bold; 
   color: white;
 }
 
@@ -16,6 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow: hidden;
 }
 
 .image-container {
