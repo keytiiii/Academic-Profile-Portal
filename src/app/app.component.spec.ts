@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AppComponent], // Remove AppComponent from imports and add it to declarations
+      declarations: [AppComponent],
     }).compileComponents();
   });
 
