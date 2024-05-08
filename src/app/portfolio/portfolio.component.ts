@@ -29,7 +29,7 @@ export class PortfolioComponent {
 
   openDialog() {
     this.matDialog.open(ModalContentComponent, {
-      width: '500px',
+      width: '800px',
     });
   }
   cardsData = [

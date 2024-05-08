@@ -8,5 +8,5 @@
 }
 
 .card-button {
-  @apply bg-red-300 w-1/2;
+  @apply bg-[#1A2C8B] text-slate-50 rounded-lg px-5 py-2.5 text-center w-2/5;
 }

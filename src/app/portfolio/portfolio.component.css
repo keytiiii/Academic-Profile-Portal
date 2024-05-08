@@ -33,5 +33,5 @@ img {
 }
 
 .card-button {
-  @apply bg-red-300 w-1/2;
+  @apply bg-[#1A2C8B] w-1/2;
 }
