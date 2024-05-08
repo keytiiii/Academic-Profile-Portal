@@ -8,7 +8,7 @@ describe('MidbarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MidbarComponent]
+      declarations: [MidbarComponent]
     })
     .compileComponents();
     
