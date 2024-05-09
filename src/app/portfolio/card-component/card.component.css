@@ -1,0 +1,12 @@
+/* import tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card-component {
+  @apply w-full h-56 text-center  rounded-lg border border-gray-500 bg-blue-300 p-3 flex flex-col gap-5 items-center;
+}
+
+.card-button {
+  @apply bg-[#1A2C8B] text-slate-50 rounded-lg px-5 py-2.5 text-center w-2/5;
+}

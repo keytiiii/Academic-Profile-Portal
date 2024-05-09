@@ -1,4 +1,37 @@
-#add{
-  color: blue;
-  width: 100px;
+/* import tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background {
+  background-color: #4861a2;
+  width: auto;
+  height: 100%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+img {
+  margin-top: 80px;
+}
+
+.portfolio-bg {
+  background-color: #4861a2;
+  @apply w-full h-full overflow-auto;
+}
+
+.card-components {
+  @apply w-11/12 justify-center grid grid-cols-4 justify-items-center gap-x-14 gap-y-5 py-5;
+}
+
+.card-component {
+  @apply w-full h-56 rounded-lg border border-gray-500 bg-blue-300 flex justify-center;
+}
+
+.card-button {
+  @apply bg-[#1A2C8B] w-1/2;
 }
