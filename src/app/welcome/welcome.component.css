@@ -7,15 +7,10 @@ body {
   color: white;
 }
 
-h3 {
-  font-size: 25px; 
-  font-weight: bold; 
-  color: white;
-}
-
 .wrapper, .form-container {
   font-family: 'Poppins', sans-serif;
   color: white;
+  background-color: #4861a2;
 }
 
 .wrapper {
