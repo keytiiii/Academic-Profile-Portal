@@ -31,7 +31,3 @@ img {
 .card-component {
   @apply w-full h-56 rounded-lg border border-gray-500 bg-blue-300 flex justify-center;
 }
-
-.card-button {
-  @apply bg-[#1A2C8B] w-1/2;
-}

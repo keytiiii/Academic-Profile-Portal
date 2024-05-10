@@ -1,29 +1,3 @@
-<div class="portfolio-bg">
-  <app-topbar></app-topbar>
-  <div class="image-container">
-    <img alt="content" src="./assets/cover.png" />
-  </div>
-  <app-midbar></app-midbar>
-
-  <div class="w-full flex justify-center items-center">
-    <div class="card-components">
-      <div class="w-full h-full" *ngFor="let card of cardsData">
-        <card-component [data]="card"></card-component>
-      </div>
-      <div class="w-full h-full">
-        <mat-dialog-actions class="card-component">
-          <button
-            (click)="openDialog()"
-            class="w-full h-full flex items-center justify-center"
-          >
-            <img
-              src="assets/add-circle-icon.svg"
-              alt="add button"
-              class="w-24 flex"
-            />
-          </button>
-        </mat-dialog-actions>
-      </div>
-    </div>
-  </div>
-</div>
+<mat-dialog-actions>
+  <button mat-raised-button id="add" (click)="openDialog()">Add</button>
+</mat-dialog-actions>

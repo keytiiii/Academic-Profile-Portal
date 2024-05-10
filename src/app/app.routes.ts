@@ -5,7 +5,6 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { ModalContentComponent } from './modal-content/modal-content.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 
 export const routes: Routes = [
@@ -16,6 +15,5 @@ export const routes: Routes = [
    { path: 'register', component: RegisterComponent},
    { path: 'login', component: LoginComponent},
    { path: 'portfolio', component: PortfolioComponent},
-   {path: 'modal-content', component: ModalContentComponent},
    { path: '**', component: NotfoundComponent } // Redirect to NotFoundComponent for unknown routes
 ];
