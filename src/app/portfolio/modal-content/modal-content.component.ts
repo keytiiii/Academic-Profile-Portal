@@ -9,15 +9,15 @@ import { Component } from '@angular/core';
 })
 export class ModalContentComponent {
 
-  files: File[] = [];
+//   files: File[] = [];
 
-onSelect(event: { addedFiles: any; }) {
-  console.log(event);
-  this.files.push(...event.addedFiles);
-}
+// onSelect(event: { addedFiles: any; }) {
+//   console.log(event);
+//   this.files.push(...event.addedFiles);
+// }
 
-onRemove(event: File) {
-  console.log(event);
-  this.files.splice(this.files.indexOf(event), 1);
-}
+// onRemove(event: File) {
+//   console.log(event);
+//   this.files.splice(this.files.indexOf(event), 1);
+// }
 }
