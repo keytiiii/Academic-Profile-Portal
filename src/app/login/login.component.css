@@ -30,11 +30,6 @@ body {
 .form-container form{
   padding:20px;
   border-radius: 50px;
-<<<<<<< Updated upstream
-  box-shadow: 0 5px 10px rgba(0,0,0,.1);
-  background: #4861a2;
-=======
->>>>>>> Stashed changes
   text-align: center;
   width: 100%;
 }
@@ -55,12 +50,6 @@ body {
   color: black;
 }
 
-<<<<<<< Updated upstream
-.form-container form .form-btn {
-  background: blue;
-  color: white;
-  text-transform: uppercase;
-=======
 .form-container form select{
   width: 60%;
   padding:10px 15px;
@@ -78,20 +67,11 @@ body {
   background: #1A2C8B;
   color: white;
   text-transform: capitalize;
->>>>>>> Stashed changes
   font-size: 15px;
   cursor: pointer;
   transition: all 0.3s;
 }
 
-<<<<<<< Updated upstream
-.form-container form .form-btn:hover {
-  background: rgb(0, 0, 111);
-  transform: scale(1.1);
-}
-
-=======
->>>>>>> Stashed changes
 .form-container form p{
   margin-top: 10px;
   font-size: 20px;
@@ -107,7 +87,7 @@ img {
   height: auto;
   float: left;
   margin-left: 0px;
-  margin-right: 250px;
+  margin-right: 157px;
 }
 
 @keyframes fadeInContainer {
