@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 body {
+<<<<<<< Updated upstream
   background-color: #4861a2;
   margin: 0;
   color: white;
+=======
+    background-color: rgba(72,97,162);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+>>>>>>> Stashed changes
 }
 
-.wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
 
 .form-container{
     display: flex;
+<<<<<<< Updated upstream
     justify-content: right;
     margin-right: 80px;
     animation: fadeInContainer 3s forwards;
@@ -30,13 +32,45 @@ body {
   }
   
   .form-container form h3{
+=======
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: space-evenly;
+    width: 100%;
+  
+}
+
+.form-container img {
+    width: 450px;
+    height: auto;
+    display: block;
+
+  }
+  
+.form-container form{
+    padding:20px;
+    border-radius: 50px;
+    text-align: center;
+    width: 500px;
+
+}
+
+.form-container form h3{
+>>>>>>> Stashed changes
     font-size: 24px;
     font-family: Poppins;
     margin-bottom: 10px;
+<<<<<<< Updated upstream
     color: #ffffff;
   }
   
   .form-container form input{
+=======
+    color: white;
+}
+
+.form-container form input{
+>>>>>>> Stashed changes
     border-radius: 100px;
     width: 60%;
     padding:10px 15px;
@@ -48,8 +82,9 @@ body {
   
   .form-container form select{
     width: 60%;
-    padding:10px 15px;
+    /* padding:10px 15px; */
     font-size: 17px;
+<<<<<<< Updated upstream
     margin:8px 0;
     background: #000000;
     text-align:center; 
@@ -100,3 +135,40 @@ body {
       opacity: 1;
     }
   }
+=======
+
+    background: #eee;
+    text-align:center; 
+}
+
+.form-container form select{
+    background: #fff;
+}
+
+.form-container form .form-btn{
+    background: #1A2C8B;
+    color: white;
+    text-transform: capitalize;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.form-container form p{
+    font-size: 20px;
+    color: white;
+}
+
+.form-container form a{
+    color: #B9C4FF;
+}
+
+
+@keyframes fadeInContainer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+>>>>>>> Stashed changes
