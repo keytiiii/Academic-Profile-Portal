@@ -14,7 +14,6 @@ body {
     margin-bottom: auto;
     justify-content: space-evenly;
     width: 100%;
-  
 }
 
 .form-container img {
@@ -29,7 +28,7 @@ body {
     border-radius: 50px;
     text-align: center;
     width: 500px;
-
+    animation: fadeInContainer 3s forwards;
 }
 
 .form-container form h3{

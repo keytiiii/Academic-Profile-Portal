@@ -39,7 +39,6 @@ body {
 .form-container form{
   padding:20px;
   border-radius: 50px;
-  box-shadow: 0 5px 10px rgba(0,0,0,.1);
   background: #4861a2;
   text-align: center;
   width: 500px;
