@@ -1,0 +1,71 @@
+<div class="portfolio-bg">
+    <app-topbar></app-topbar>
+    <div class="image-container">
+      <img src="./assets/cover.png" alt="cover photo">
+    </div>
+    <app-midbar></app-midbar>
+
+    <div class="bg-[#1C202C] mx-auto max-w-[60rem] items-center p-6 lg:px-8 mt-2 flex justify-center">
+        <div class="relative">
+          <a href="#" class="text-sm font-semibold leading-6 text-white-900 block w-[50rem] text-center flex items-center" (click)="toggleDropdown('workExperience')">
+            <span class="flex-1">Work Experience</span>
+            <svg class="h-5 w-5 text-gray-400 cursor-pointer" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          <div id="workExperienceDropdown" [class.hidden]="!dropdownVisible['workExperience']" class="absolute right-0 mt-2 bg-white border border-gray-200 rounded-md shadow-lg z-10">
+            <div class="w-[50rem]"> <!-- Adjust the width as needed -->
+              <!-- Dropdown content here -->
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="bg-[#1C202C] mx-auto max-w-[60rem] items-center p-6 lg:px-8 mt-2 flex justify-center">
+        <div class="relative">
+          <a href="#" class="text-sm font-semibold leading-6 text-white-900 block w-[50rem] text-center flex items-center" (click)="toggleDropdown('education')">
+            <span class="flex-1">Education</span>
+            <svg class="h-5 w-5 text-gray-400 cursor-pointer" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          <div id="educationDropdown" [class.hidden]="!dropdownVisible['education']" class="absolute right-0 mt-2 bg-white border border-gray-200 rounded-md shadow-lg z-10">
+            <div class="w-[50rem]"> <!-- Adjust the width as needed -->
+              <!-- Dropdown content here -->
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="bg-[#1C202C] mx-auto max-w-[60rem] items-center p-6 lg:px-8 mt-2 flex justify-center">
+        <div class="relative">
+          <a href="#" class="text-sm font-semibold leading-6 text-white-900 block w-[50rem] text-center flex items-center" (click)="toggleDropdown('certification')">
+            <span class="flex-1">Certification</span>
+            <svg class="h-5 w-5 text-gray-400 cursor-pointer" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          <div id="certificationDropdown" [class.hidden]="!dropdownVisible['certification']" class="absolute right-0 mt-2 bg-white border border-gray-200 rounded-md shadow-lg z-10">
+            <div class="w-[50rem]"> <!-- Adjust the width as needed -->
+              <!-- Dropdown content here -->
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="bg-[#1C202C] mx-auto max-w-[60rem] items-center p-6 lg:px-8 mt-2 flex justify-center">
+        <div class="relative">
+          <a href="#" class="text-sm font-semibold leading-6 text-white-900 block w-[50rem] text-center flex items-center" (click)="toggleDropdown('skills')">
+            <span class="flex-1">Skills</span>
+            <svg class="h-5 w-5 text-gray-400 cursor-pointer" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          <div id="skillsDropdown" [class.hidden]="!dropdownVisible['skills']" class="absolute right-0 mt-2 bg-white border border-gray-200 rounded-md shadow-lg z-10">
+            <div class="w-[50rem]"> <!-- Adjust the width as needed -->
+              <!-- Dropdown content here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

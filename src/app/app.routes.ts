@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SettingsComponent } from './settings/settings.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { ProfileComponent } from './profile/profile.component';
 
 export const routes: Routes = [
    { path: '', redirectTo: 'welcome', pathMatch: 'full'},
@@ -17,5 +18,6 @@ export const routes: Routes = [
    { path: 'login', component: LoginComponent},
    { path: 'portfolio', component: PortfolioComponent},
    { path: 'settings', component: SettingsComponent},
+   { path: 'profile', component: ProfileComponent },
    { path: '**', component: NotfoundComponent } // Redirect to NotFoundComponent for unknown routes
 ];

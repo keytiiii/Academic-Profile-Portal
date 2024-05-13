@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background {
+  background-color: #4861a2;
+  width: auto;
+  height: 100%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+img {
+  margin-top: 80px;
+}
+
+.portfolio-bg {
+  background-color: #4861a2;
+  @apply w-full h-full overflow-auto;
+}
+
+#dropdown {
+    width: auto; /* Adjust as needed */
+  }
+  
