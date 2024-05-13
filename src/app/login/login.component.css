@@ -2,13 +2,15 @@
 
 body {
   background-color: #4861a2;
-  margin: 0;
+  margin: 0;  
+  padding: 0;
   color: white;
 }
 
 .wrapper, .form-container {
   font-family: 'Poppins', sans-serif;
   color: white;
+  background-color: #4861a2;
 }
 
 .wrapper {
@@ -16,6 +18,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow: hidden;
+}
+
+.image-container {
+  width: 450px;
+  margin-right: 0px;
+  margin-top: 0%;
 }
 
 .form-container{
@@ -30,15 +39,16 @@ body {
 .form-container form{
   padding:20px;
   border-radius: 50px;
+  background: #4861a2;
   text-align: center;
-  width: 100%;
+  width: 500px;
 }
 
 .form-container form h3{
   font-size: 24px;
   font-family: Arial;
   margin-bottom: 10px;
-  color: white;
+  color: #333;
 }
 
 .form-container form input{
@@ -50,51 +60,63 @@ body {
   color: black;
 }
 
-.form-container form select{
-  width: 60%;
-  padding:10px 15px;
-  font-size: 17px;
-  margin:8px 0;
-  background: #eee;
-  text-align:center; 
-}
-
-.form-container form select{
-  background: #fff;
-}
-
-.form-container form .form-btn{
-  background: #1A2C8B;
+.form-container form .form-btn {
+  background: blue;
   color: white;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-size: 15px;
   cursor: pointer;
   transition: all 0.3s;
 }
 
+.form-container form .form-btn:hover {
+  background: rgb(0, 0, 111);
+  transform: scale(1.1);
+}
+
 .form-container form p{
   margin-top: 10px;
   font-size: 20px;
-  color: white;
+  color: #333;
 }
 
-.form-container form a{
-  color: #B9C4FF;
+.form-container form p a{
+  color: crimson;
 }
 
 img {
+  width:450px;
+  margin: 0;
+  transition: transform 1s ease, width 1s ease;
+  position:relative;
+}
+
+img.move {
   width: 450px;
-  height: auto;
-  float: left;
-  margin-left: 0px;
-  margin-right: 157px;
+  transform: translateX(-10%);
+  animation: zoomOutAndMoveLeft 2s forwards;
+}
+
+@keyframes zoomOutAndMoveLeft {
+  0% {
+      transform: scale(150%);
+  }
+  50% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1) translateX(-27.8%);
+  }
 }
 
 @keyframes fadeInContainer {
-  0% {
+0% {
     opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+}
+50% {
+    opacity: 0;
+}
+100% {
+  opacity: 1;
+}
 }

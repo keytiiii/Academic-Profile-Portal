@@ -2,97 +2,36 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    margin: 50px;
   }
 
 .profile {
-    
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 100px;
+    margin-right: 150px;
+}
+
+.pfp{
+  margin: 10px;
+}
+
+.pfp img{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 10px solid #00000;
+  
 }
 
 .featured-container{
     display: flex;
     justify-content: center;
     animation: fadeInContainer 3s forwards;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 100px;
+    margin: 100px;
   }
   
-  .featured-container form{
-    padding:20px;
-    border-radius: 50px;
-    box-shadow: 0 5px 10px rgba(0,0,0,.1);
-    background: #6284DB;
-    text-align: center;
-    width: 500px;
-  }
-  
-  .featured-container form h3{
-    font-size: 24px;
-    font-family: Poppins;
-    margin-bottom: 10px;
-    color: #ffffff;
-  }
-  
-  .featured-container form input{
-    border-radius: 100px;
-    width: 60%;
-    padding:10px 15px;
-    font-size: 15px;
-    margin:8px 0;
-    font-family: Arial;
-    background: #d1d1d1;
-  }
-  
-  .featured-container form select{
-    width: 60%;
-    padding:10px 15px;
-    font-size: 17px;
-    margin:8px 0;
-    background: #000000;
-    text-align:center; 
-  }
-  
-  .featured-container form select{
-    background: #d1d1d1;
-    color: #000000;
-  }
-  
-  .featured-container form .form-btn {
-    background: blue;
-    color: white;
-    text-transform: uppercase;
-    font-size: 15px;
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-  
-  .featured-container form .form-btn:hover {
-    background: rgb(0, 0, 111);
-    transform: scale(1.1);
-  }
-  
-  .featured-container form p{
-    margin-top: 10px;
-    font-size: 20px;
-    color: #333;
-  }
-  
-  .featured-container form p a{
-    color: crimson;
-  }
-  
-  img {
-    width: 450px;
-    height: auto;
-    float: left;
-    margin-left: 0px;
-    margin-right: 170px;
-  }
-  
-  @keyframes fadeInContainer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 

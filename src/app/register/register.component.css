@@ -12,7 +12,7 @@ body {
     display: flex;
     margin-top: auto;
     margin-bottom: auto;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
 }
 
@@ -24,7 +24,7 @@ body {
   }
   
 .form-container form{
-    padding:20px;
+    padding: 20px;
     border-radius: 50px;
     text-align: center;
     width: 500px;
@@ -76,6 +76,10 @@ body {
 
 .form-container form a{
     color: #B9C4FF;
+}
+
+img {
+  padding-right: 250px;
 }
 
 
