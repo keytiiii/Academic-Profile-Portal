@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms'; // Add this import
 import { SettingsComponent } from './settings.component';
+import { Router } from '@angular/router';
+
 
 describe('SettingsComponent', () => {
   let component: SettingsComponent;
