@@ -8,6 +8,44 @@
   height: 100%;
 }
 
+.nav-container {
+  background-color: #1C202C;
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6; /* Equivalent to p-6 in Tailwind CSS */
+  padding-bottom: 6; /* Equivalent to p-6 in Tailwind CSS */
+  padding-left: 8; /* Equivalent to lg:px-8 in Tailwind CSS */
+  padding-right: 8; /* Equivalent to lg:px-8 in Tailwind CSS */
+  position: relative;
+  top: 5rem; /* Adjust as needed */
+}
+
+/* Adjust the padding of each container within the navigation elements */
+.nav-container .container {
+  padding-top: 12px; /* Adjust as needed */
+  padding-bottom: 12px; /* Adjust as needed */
+  padding-left: 16px; /* Adjust as needed */
+  padding-right: 16px; /* Adjust as needed */
+}
+
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align items to the right */
+}
+
+.nav-link {
+  color: white;
+}
+
 .image-container {
   display: flex;
   justify-content: center;
