@@ -1,6 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { StudentDashboardComponent } from '../student-dashboard/student-dashboard.component';
+
+interface projectImage {
+}
 
 @Component({
   selector: 'app-home',
@@ -9,6 +12,12 @@ import { StudentDashboardComponent } from '../student-dashboard/student-dashboar
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
+  @Input()images: projectImage[] = []
+
+  selectedIndex = 0;
+
+  ngOnInit(): void {    
+  }
 }
