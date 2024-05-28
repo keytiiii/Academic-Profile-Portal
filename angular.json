@@ -26,7 +26,9 @@
             ],
             "styles": [
               "src/styles.css",
-              "@angular/material/prebuilt-themes/indigo-pink.css"
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "node_modules/ngx-toastr/toastr.css"
+              
             ],
             "scripts": []
           },
