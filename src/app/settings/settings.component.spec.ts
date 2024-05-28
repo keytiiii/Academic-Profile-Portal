@@ -1,8 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { FormsModule } from '@angular/forms'; // Add this import
+import { FormsModule } from '@angular/forms';
+import { RouterTestingModule } from '@angular/router/testing'; // Import RouterTestingModule
 import { SettingsComponent } from './settings.component';
-import { Router } from '@angular/router';
-
 
 describe('SettingsComponent', () => {
   let component: SettingsComponent;
@@ -10,8 +9,8 @@ describe('SettingsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SettingsComponent ],
-      imports: [ FormsModule ] // Add FormsModule here
+      declarations: [SettingsComponent],
+      imports: [FormsModule, RouterTestingModule] // Add RouterTestingModule here
     })
     .compileComponents();
   });
