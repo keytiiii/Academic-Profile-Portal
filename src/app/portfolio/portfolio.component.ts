@@ -6,6 +6,7 @@ import { MidbarComponent } from '../midbar/midbar.component';
 import { HomeComponent } from '../home/home.component';
 import { CardComponent } from './card-component/card.component';
 import { CommonModule } from '@angular/common';
+import { DataService } from '../data.service';
 
 
 @Component({
@@ -24,7 +25,7 @@ export class PortfolioComponent {
 
   openDialog(){
     this.matDialog.open(ModalContentComponent,{
-      width: '1000px',
+      width: '800px',
     })
   }
 
