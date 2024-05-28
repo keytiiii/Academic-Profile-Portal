@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 import { ModalContentComponent } from '../portfolio/modal-content/modal-content.component';
 import { MatDialog, MatDialogModule, MatDialogActions } from '@angular/material/dialog';
@@ -6,13 +7,12 @@ import { MidbarComponent } from '../midbar/midbar.component';
 import { HomeComponent } from '../home/home.component';
 import { CardComponent } from './card-component/card.component';
 import { CommonModule } from '@angular/common';
-import { DataService } from '../data.service';
 
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [ModalContentComponent, MatDialogModule, MatDialogActions, TopbarComponent, MidbarComponent, HomeComponent, CardComponent, CommonModule],
+  imports: [MatDialogModule, MatDialogActions, TopbarComponent, MidbarComponent, HomeComponent, CardComponent, CommonModule],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css',
 })

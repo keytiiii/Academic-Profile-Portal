@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { NotfoundComponent } from './notfound.component';
 
 describe('NotfoundComponent', () => {
@@ -8,7 +7,7 @@ describe('NotfoundComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NotfoundComponent]
+      declarations: [NotfoundComponent] // Declare the component here
     })
     .compileComponents();
     

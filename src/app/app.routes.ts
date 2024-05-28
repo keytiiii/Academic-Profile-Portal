@@ -3,21 +3,19 @@ import { StudentDashboardComponent } from './student-dashboard/student-dashboard
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SettingsComponent } from './settings/settings.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 
 export const routes: Routes = [
-   { path: '', redirectTo: 'login', pathMatch: 'full'},
-   { path: 'student-dashboard', component: StudentDashboardComponent },
-   { path: 'admin-dashboard', component: AdminDashboardComponent},
-   { path: 'register', component: RegisterComponent},
-   { path: 'login', component: LoginComponent},
-   { path: 'portfolio', component: PortfolioComponent},
-   { path: 'settings', component: SettingsComponent},
-   { path: 'profile', component: ProfileComponent },
-   { path: 'home', component: ProfileComponent },
-   { path: '**', component: NotfoundComponent }
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'student-dashboard', component: StudentDashboardComponent },
+  { path: 'admin-dashboard', component: AdminDashboardComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'settings', component: SettingsComponent },
+  { path: 'profile', component: ProfileComponent },
+  { path: 'home', component: HomeComponent }, // Corrected to use HomeComponent
+  { path: '**', component: NotfoundComponent }
 ];

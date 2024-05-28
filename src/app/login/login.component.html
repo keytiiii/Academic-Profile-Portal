@@ -1,11 +1,35 @@
 <div class="wrapper">
-    <img src="assets/APP Logo.png" class="move" alt="logo" >
-    <div class="form-container">
-     <form action="" method="post">
-        <h3 style="font-size: 25px; font-weight: bold; color: white;">Welcome Students!</h3>
-        <input type="email" name="email" required placeholder="Username">
-        <input type="password" name="password" required placeholder="Password">
-        <input type="submit" name="submit" value="LOGIN NOW" class="form-btn">
-        <p style="font-size: 15px;">Don't have an account?</p> <a href="/register">Register Now</a>
-     </form>
+  <img src="assets/app-logo.png" class="move" alt="logo" />
+  <div class="form-container">
+    <!-- <form action="" method="post">
+      <h3 style="font-size: 25px; font-weight: bold; color: white">
+        Welcome Students!
+      </h3>
+      <input type="email" name="email" required placeholder="Username" />
+      <input type="password" name="password" required placeholder="Password" />
+      <input type="submit" name="submit" value="LOGIN NOW" class="form-btn" />
+      <p style="font-size: 15px">Don't have an account?</p>
+      <a href="/register">Register Now</a>
+    </form> -->
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <h3 style="font-size: 25px; font-weight: bold; color: white">
+        Welcome Students!
+      </h3>
+      <input
+        type="email"
+        formControlName="email"
+        required
+        placeholder="Enter your Email"
+      />
+      <input
+        type="password"
+        formControlName="password"
+        required
+        placeholder="Enter your Password"
+      />
+      <input type="submit" class="form-btn" value="Login" />
+      <p>Don't have an account?</p>
+      <a href="/register">Login Now</a>
+    </form>
+  </div>
 </div>
