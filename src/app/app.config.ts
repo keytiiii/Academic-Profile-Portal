@@ -14,5 +14,9 @@ export const appConfig: ApplicationConfig = {
     provideAnimationsAsync(),
     provideAnimations(),
     provideToastr(),
+<<<<<<< HEAD
+=======
+   
+>>>>>>> 67c4567a36fc434fbae021089d01d7ffaf412491
   ],
 };
