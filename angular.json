@@ -25,8 +25,15 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
+              "src/styles.css",
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "node_modules/ngx-toastr/toastr.css"
+              
+=======
               "@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.css"
+>>>>>>> fce12b14f28af41e1200e97640c9f7e67828c792
             ],
             "scripts": []
           },
