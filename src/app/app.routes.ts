@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
@@ -11,6 +10,7 @@ import { AuthLayoutComponent } from './auth-layout.component';
 import { MainLayoutComponent } from './main-layout.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { authGuard } from './auth.guard';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -27,11 +27,6 @@ export const routes: Routes = [
     component: MainLayoutComponent,
     children: [
       {
-        path: 'student-dashboard',
-        component: StudentDashboardComponent,
-        canActivate: [authGuard],
-      },
-      {
         path: 'admin-dashboard',
         component: AdminDashboardComponent,
         canActivate: [authGuard],
@@ -42,11 +37,6 @@ export const routes: Routes = [
         canActivate: [authGuard],
       },
       {
-        path: 'settings',
-        component: SettingsComponent,
-        canActivate: [authGuard],
-      },
-      {
         path: 'profile',
         component: ProfileComponent,
         canActivate: [authGuard],
@@ -54,5 +44,7 @@ export const routes: Routes = [
       { path: 'home', component: HomeComponent, canActivate: [authGuard] },
     ],
   },
+  { path: 'feedback', component: FeedbackComponent, canActivate: [authGuard] },
+  { path: 'settings', component: SettingsComponent, canActivate: [authGuard] },
   { path: '**', component: NotfoundComponent },
 ];

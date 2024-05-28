@@ -1,13 +1,16 @@
 .container {
-    width: 50%;
+    max-width: 50%;
+    height: 100vh;
     margin: auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
 }
 
-h1 {
-    text-align: center;
+h2 {
+    padding-top: 100px;
+    color: #fff;
+    font-weight: bold;
 }
 
 form {
@@ -27,11 +30,12 @@ textarea {
     margin: 5px 0;
     box-sizing: border-box;
     border: 1px solid #ccc;
+    background-color : #4861A2;
     border-radius: 4px;
 }
 
 input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #1A2C8B;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -41,5 +45,5 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #5975bb;
 }
