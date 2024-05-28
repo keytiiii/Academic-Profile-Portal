@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
@@ -26,14 +25,13 @@ export const routes: Routes = [
     path: '',
     component: MainLayoutComponent,
     children: [
-      { path: 'student-dashboard', component: StudentDashboardComponent },
       { path: 'admin-dashboard', component: AdminDashboardComponent },
       { path: 'portfolio', component: PortfolioComponent },
-      { path: 'settings', component: SettingsComponent },
       { path: 'profile', component: ProfileComponent },
       { path: 'home', component: HomeComponent },
     ],
   },
-  { path: '**', component: NotfoundComponent },
   { path: 'feedback', component: FeedbackComponent},
+  { path: 'settings', component: SettingsComponent },
+  { path: '**', component: NotfoundComponent },
 ];
