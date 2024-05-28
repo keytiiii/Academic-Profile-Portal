@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { FeedbackComponent } from './feedback.component';
 
 describe('FeedbackComponent', () => {
@@ -8,7 +7,7 @@ describe('FeedbackComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FeedbackComponent]
+      declarations: [FeedbackComponent] 
     })
     .compileComponents();
     
