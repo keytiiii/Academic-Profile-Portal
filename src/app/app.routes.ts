@@ -16,6 +16,6 @@ export const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'settings', component: SettingsComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: 'home', component: HomeComponent }, // Corrected to use HomeComponent
-  { path: '**', component: NotfoundComponent }
+  { path: 'home', component: HomeComponent },
+  { path: '**', component: NotfoundComponent },
 ];
