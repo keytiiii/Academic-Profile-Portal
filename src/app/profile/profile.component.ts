@@ -1,13 +1,9 @@
 import { Component } from '@angular/core';
-import { TopbarComponent } from '../topbar/topbar.component';
-import { MidbarComponent } from '../midbar/midbar.component';
 
 @Component({
   selector: 'app-profile',
-  standalone: true,
-  imports: [TopbarComponent, MidbarComponent],
   templateUrl: './profile.component.html',
-  styleUrl: './profile.component.css'
+  styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent {
   dropdownVisible: { [key: string]: boolean } = {
