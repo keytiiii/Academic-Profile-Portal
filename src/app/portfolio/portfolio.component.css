@@ -24,7 +24,7 @@ img {
 }
 
 .card-components {
-  @apply w-11/12 justify-center grid grid-cols-4 justify-items-center gap-x-14 gap-y-5 py-5;
+  @apply w-11/12 justify-center flex flex-wrap  justify-items-center gap-x-14 gap-y-5 py-5;
 }
 
 .card-component {
@@ -33,4 +33,8 @@ img {
 
 .card-button {
   @apply bg-[#1A2C8B] w-1/2;
+}
+
+.card-add {
+  @apply w-80 h-80 bg-transparent border-2 border-transparent hover:border-blue-500 rounded-xl ease-in-out transition duration-300;
 }

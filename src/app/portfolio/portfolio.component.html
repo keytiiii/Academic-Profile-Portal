@@ -1,14 +1,111 @@
 <div class="w-full flex justify-center items-center">
   <div class="card-components">
-    <div class="w-full h-full" *ngFor="let card of cardsData"></div>
-    <div class="w-full h-full">
-      <button mat-button class="w-full h-full flex items-center justify-center">
+    <div class="card-add">
+      <button
+        mat-button
+        class="h-full flex flex-col gap-0 items-center w-full justify-center"
+        (click)="open()"
+      >
         <img
           src="assets/add-circle-icon.svg"
           alt="add button"
-          class="w-24 flex"
+          class="w-44 hover:scale-125 ease-in-out transition duration-300"
         />
       </button>
     </div>
+    <div
+      *ngIf="portfolioData && portfolioData.length > 0"
+      class="flex flex-wrap flex-row gap-5"
+    >
+      <div
+        *ngFor="let item of portfolioData"
+        class="p-3 w-80 h-80 bg-blue-300 rounded-xl cursor-pointer"
+        (click)="openInfoModal(item)"
+      >
+        <div class="w-full border-2 border-transparent border-b-gray-500">
+          <h3 class="font-bold text-xl">{{ item.projectTitle }}</h3>
+        </div>
+        <div class="h-52 pt-3">
+          <p class="text-base h-52 truncate">
+            <span class="font-semibold">Description:</span> <br />{{
+              item.projectDesc
+            }}
+          </p>
+        </div>
+        <div class="w-full border-2 border-transparent border-t-gray-500">
+          <p class="text-base">
+            GitHub Url:
+            <a class="underline hover:text-blue-900" [href]="item.projectGit">
+              {{ item.projectGit }}
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+
+<app-modal-info
+  [isInfoVisible]="modalInfoVisible"
+  (closeInfoEvent)="handleCloseInfo()"
+>
+  <ng-container *ngIf="selectedItem">
+    <div class="w-full border-2 border-transparent border-b-gray-500">
+      <h3 class="font-bold text-xl">{{ selectedItem.projectTitle }}</h3>
+    </div>
+    <div class="h-96 max-h-96 overflow-y-auto py-2">
+      <p class="text-lg h-80">Description: {{ selectedItem.projectDesc }}</p>
+    </div>
+    <div class="w-full border-2 border-transparent mt-2 border-t-gray-500">
+      <p class="text-lg">
+        GitHub Url:
+        <a
+          class="underline hover:text-blue-900"
+          [href]="selectedItem.projectGit"
+        >
+          {{ selectedItem.projectGit }}
+        </a>
+      </p>
+    </div>
+  </ng-container>
+</app-modal-info>
+
+<app-modal [isVisible]="modalVisible" (closeEvent)="handleClose()">
+  <form
+    [formGroup]="addPortfolio"
+    (ngSubmit)="onSubmit()"
+    class="flex flex-col gap-2"
+  >
+    <div class="flex flex-col">
+      <span>Title</span>
+      <input
+        type="text"
+        formControlName="title"
+        required
+        placeholder="Enter your project title here."
+        class="border-2 border-blue-400 rounded-xl p-2"
+      />
+    </div>
+    <div class="flex flex-col">
+      <span>Description</span>
+      <input
+        type="text"
+        formControlName="description"
+        required
+        placeholder="Enter your project Description here."
+        class="border-2 border-blue-400 rounded-xl p-2"
+      />
+    </div>
+    <div class="flex flex-col">
+      <span>GitHub URL</span>
+      <input
+        type="text"
+        formControlName="gitUrl"
+        required
+        placeholder="Enter your project GitHub URL here."
+        class="border-2 border-blue-400 rounded-xl p-2"
+      />
+    </div>
+    <input type="submit" value="Next" class="form-btn" />
+  </form>
+</app-modal>

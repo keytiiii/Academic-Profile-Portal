@@ -1,0 +1,12 @@
+<div class="modal-backdrop" *ngIf="isInfoVisible">
+  <div class="modal">
+    <div class="modal-header">
+      <h2>Project Details</h2>
+      <button (click)="close()">X</button>
+    </div>
+    <div class="modal-body">
+      <ng-content></ng-content>
+    </div>
+    <div class="modal-footer"></div>
+  </div>
+</div>

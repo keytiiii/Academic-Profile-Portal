@@ -44,6 +44,9 @@ export class LoginComponent {
       });
 
       if (response.ok) {
+        const data = await response.json();
+        const userId = data.userId;
+        localStorage.setItem('userId', userId);
         this.toastr.success('Sign-in successful!', 'Success');
         this.router.navigate(['/home']);
       } else {
