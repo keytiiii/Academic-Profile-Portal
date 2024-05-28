@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-body {
-  background-color: #4861a2;
-  margin: 0;  
-  padding: 0;
-  color: white;
-}
-
 .wrapper, .form-container {
   font-family: 'Poppins', sans-serif;
   color: white;
@@ -41,7 +34,7 @@ body {
   border-radius: 50px;
   background: #4861a2;
   text-align: center;
-  width: 500px;
+  width: 650px;
 }
 
 .form-container form h3{
@@ -58,6 +51,7 @@ body {
   padding:10px 15px;
   margin: 5px;
   color: black;
+  border: none;
 }
 
 .form-container form .form-btn {
@@ -80,8 +74,9 @@ body {
   color: #333;
 }
 
-.form-container form p a{
-  color: crimson;
+.form-container form a{
+  color: #B9C4FF;
+  text-decoration: none;
 }
 
 img {
