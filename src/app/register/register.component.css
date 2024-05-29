@@ -26,11 +26,12 @@
   animation: fadeInContainer 3s forwards;
 }
 
-.form-container form h3 {
+.form-container form h2 {
   font-size: 24px;
   font-family: Poppins;
   margin-bottom: 10px;
   color: white;
+  font-weight: 600;
 }
 
 .form-container form .input-field {
@@ -40,7 +41,7 @@
   padding: 10px 15px;
   font-size: 15px;
   margin: 8px 0;
-  font-family: Arial;
+  font-family: Poppins;
   background-color: #d1d1d1;
   color: black;
 }
@@ -52,7 +53,7 @@
   padding: 10px 15px;
   font-size: 15px;
   margin: 8px 0;
-  font-family: Arial;
+  font-family: Poppins;
   background: white;
 }
 
@@ -63,7 +64,7 @@
   padding: 10px 15px;
   font-size: 15px;
   margin: 8px 0;
-  font-family: Arial, sans-serif;
+  font-family: Poppins, sans-serif;
   background: #d1d1d1;
 }
 
@@ -76,20 +77,23 @@
   border-radius: 100px;
   border: none;
   padding: 0px 30px;
+  font-family: Poppins;
 }
 
 .form-container form p {
   font-size: 20px;
   color: white;
+  font-family: Poppins;
 }
 
 .form-container form a {
   color: #b9c4ff;
   text-decoration: none;
+  font-family: Poppins;
 }
 
 img {
-  padding-right: 250px;
+  padding-right: 50px;
 }
 
 @keyframes fadeInContainer {
