@@ -115,6 +115,9 @@ export class PortfolioComponent {
 
       const data = await response.json();
       console.log(data);
+      this.fetchData()
+      this.modalVisible=false
+      this.addPortfolio.reset()
       this.toastr.success(values.title, 'Success');
     } catch (error) {
       this.toastr.error('Error adding user!', 'Error');
