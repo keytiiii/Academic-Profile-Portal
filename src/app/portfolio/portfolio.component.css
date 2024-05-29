@@ -18,6 +18,12 @@ img {
   margin-top: 80px;
 }
 
+.form-btn{
+  background: #4861A2;
+  padding: 5px;
+  border-radius: 10px;
+}
+
 .portfolio-bg {
   background-color: #4861a2;
   @apply w-full h-full overflow-auto;

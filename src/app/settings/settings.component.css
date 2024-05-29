@@ -30,12 +30,15 @@ h2 {
 }
 
 label {
+    color: #fff;
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
 input[type="text"],
+input[type="email"],
+input[type="password"],
 input[type="date"],
 input[type="number"],
 select,
@@ -50,16 +53,31 @@ textarea {
     background-color : #4861A2;
 }
 
+.pfp{
+    height: 180px;
+    width: 180px;
+    border-radius: 100%;
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+    object-fit: cover;
+}
 
+.pfpbtn{
+    margin-left: 50px;
+    color: transparent;
+    margin-bottom: 30px;
+}
 
 input[type="submit"] {
     width: 100%;
-    background-color: #4861A2;
+    background-color: #1A2C8B;
     color: #fff;
     padding: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 15px;
 }
 
 input[type="submit"]:hover {
