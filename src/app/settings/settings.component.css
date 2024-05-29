@@ -34,6 +34,7 @@ label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    font-size: 15.5px;
 }
 
 input[type="text"],
@@ -51,6 +52,7 @@ textarea {
     border-radius: 4px;
     box-sizing: border-box;
     background-color : #4861A2;
+    font-size: 17px;
 }
 
 .pfp{
@@ -61,6 +63,7 @@ textarea {
     border-style: solid;
     border-color: black;
     object-fit: cover;
+    
 }
 
 .pfpbtn{
