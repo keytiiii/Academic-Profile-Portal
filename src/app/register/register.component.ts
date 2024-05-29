@@ -8,6 +8,7 @@ import {
 import { CommonModule } from '@angular/common';
 import { AccountType } from '../../types';
 import { ToastrService, ToastrModule } from 'ngx-toastr';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -17,7 +18,7 @@ import { ToastrService, ToastrModule } from 'ngx-toastr';
   styleUrls: ['./register.component.css'],
 })
 export class RegisterComponent {
-  constructor(private formBuilder: FormBuilder, private toastr: ToastrService) {
+  constructor(private formBuilder: FormBuilder, private toastr: ToastrService, private router : Router) {
     this.registerForm = this.formBuilder.group({
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
@@ -110,7 +111,10 @@ export class RegisterComponent {
       const data = await response.json();
       console.log(data);
       this.toastr.success('User registered successfully!', 'Success');
-    } catch (error) {
+      this.router.navigate(['/login']);
+    } 
+    
+    catch (error) {
       this.toastr.error('Error adding user!', 'Error');
     }
   }

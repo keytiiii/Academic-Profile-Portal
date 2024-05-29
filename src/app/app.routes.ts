@@ -28,11 +28,6 @@ export const routes: Routes = [
     component: MainLayoutComponent,
     children: [
       {
-        path: 'admin-dashboard',
-        component: AdminDashboardComponent,
-        canActivate: [authGuard],
-      },
-      {
         path: 'portfolio',
         component: PortfolioComponent,
         canActivate: [authGuard],
@@ -52,5 +47,6 @@ export const routes: Routes = [
   },
   { path: 'feedback', component: FeedbackComponent, canActivate: [authGuard] },
   { path: 'settings', component: SettingsComponent, canActivate: [authGuard] },
+  { path: 'admin-dashboard', component: AdminDashboardComponent, canActivate: [authGuard]},
   { path: '**', component: NotfoundComponent },
 ];

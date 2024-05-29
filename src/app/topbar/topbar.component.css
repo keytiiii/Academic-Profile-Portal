@@ -45,6 +45,7 @@ nav ul li{
   display: inline-block;
   line-height: 69px;
   margin: 0 5px;
+  cursor: pointer;
 }
 
 nav ul li a{

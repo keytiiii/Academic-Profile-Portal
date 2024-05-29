@@ -1,49 +1,62 @@
 <div class="w-full flex justify-center items-center">
   <div class="card-components">
-    <div class="card-add">
-      <button
-        mat-button
-        class="h-full flex flex-col gap-0 items-center w-full justify-center"
-        (click)="open()"
-      >
-        <img
-          src="assets/add-circle-icon.svg"
-          alt="add button"
-          class="w-44 hover:scale-125 ease-in-out transition duration-300"
-        />
-      </button>
-    </div>
     <div
       *ngIf="portfolioData && portfolioData.length > 0"
       class="flex flex-wrap flex-row gap-5"
     >
-      <div
-        *ngFor="let item of portfolioData"
-        class="p-3 w-80 h-80 bg-blue-300 rounded-xl cursor-pointer"
-        (click)="openInfoModal(item)"
-      >
-        <div class="w-full border-2 border-transparent border-b-gray-500">
-          <h3 class="font-bold text-xl mb-2">{{ item.projectTitle }}</h3>
+      <ng-container *ngFor="let item of portfolioData; let i = index; last as isLast">
+        <div
+          class="p-3 w-80 h-80 bg-blue-300 rounded-xl cursor-pointer"
+          (click)="openInfoModal(item)"
+        >
+          <div class="w-full border-2 border-transparent border-b-gray-500">
+            <h3 class="font-bold text-xl mb-2">{{ item.projectTitle }}</h3>
+          </div>
+          <div class="h-52 pt-3">
+            <p class="text-base h-52 truncate">
+              <span class="font-semibold">Description:</span> <br />{{ item.projectDesc }}
+            </p>
+          </div>
+          <div class="w-full border-2 border-transparent border-t-gray-500">
+            <p class="text-base font-semibold">
+              GitHub Url:
+              <a class="underline hover:text-blue-900" [href]="item.projectGit">{{ item.projectGit }}</a>
+            </p>
+          </div>
         </div>
-        <div class="h-52 pt-3">
-          <p class="text-base h-52 truncate">
-            <span class="font-semibold">Description:</span> <br />{{
-              item.projectDesc
-            }}
-          </p>
+  
+        <!-- Add button will only appear once, at the end of the loop -->
+        <div class="card-add" *ngIf="isLast">
+          <button
+            mat-button
+            class="h-full flex flex-col gap-0 items-center w-full justify-center"
+            (click)="open()"
+          >
+            <img
+              src="assets/add-circle-icon.svg"
+              alt="add button"
+              class="w-44 hover:scale-125 ease-in-out transition duration-300"
+            />
+          </button>
         </div>
-        <div class="w-full border-2 border-transparent border-t-gray-500">
-          <p class="text-base font-semibold">
-            GitHub Url:
-            <a class="underline hover:text-blue-900" [href]="item.projectGit">
-              {{ item.projectGit }}
-            </a>
-          </p>
-        </div>
-      </div>
+      </ng-container>
     </div>
+  
+    <div class="card-add" *ngIf="!portfolioData || portfolioData.length === 0">
+    <button
+        mat-button
+        class="h-full flex flex-col gap-0 items-center w-full justify-center"
+        (click)="open()"
+    >
+        <img
+        src="assets/add-circle-icon.svg"
+        alt="add button"
+        class="w-44 hover:scale-125 ease-in-out transition duration-300"
+        />
+    </button>
   </div>
-</div>
+  </div>
+  </div>
 
 <app-modal-info
   [isInfoVisible]="modalInfoVisible"
