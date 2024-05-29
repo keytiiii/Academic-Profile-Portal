@@ -22,8 +22,11 @@ export class RegisterComponent {
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
+      department: [this.departments[0].name, Validators.required],
+      program: [this.selectedDepartmentPrograms[0], Validators.required],
       password: ['', Validators.required],
       cpassword: ['', Validators.required],
+      gender: ['', Validators.required],
     });
   }
 
@@ -111,9 +114,12 @@ export class RegisterComponent {
       this.toastr.error('Error adding user!', 'Error');
     }
   }
-
-  onDepartmentChange(departmentName: string) {
-    this.selectedDepartment = departmentName;
-    this.selectedProgram = '';
+  selectedDepartmentPrograms: string[] = [];
+  onDepartmentChange(event: any) {
+    const selectedDepartment = event.target.value;
+    const department = this.departments.find(
+      (dep) => dep.name === selectedDepartment
+    );
+    this.selectedDepartmentPrograms = department ? department.programs : [];
   }
 }

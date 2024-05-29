@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   color: white;
 }
@@ -45,11 +49,7 @@
 }
 
 .center-border {
-  height: 450px;
-  width: 5px;
-  background-color: #1a2c8b;
-  opacity: 50%;
-  margin: 0 10px 0 10px;
+  @apply h-96 w-[5px] bg-blue-500 opacity-50 my-0 mx-3;
 }
 
 .featured-container {
@@ -62,7 +62,7 @@
 }
 
 #fp-title {
-  margin: 25px;
+  margin-top: 25px;
   display: flex;
   justify-content: center;
   font-weight: 699;
@@ -71,12 +71,9 @@
 
 .proj {
   display: flex;
-  margin: 20px;
 }
 
 .proj-img {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 125px;
   margin: 20px;
 }
 

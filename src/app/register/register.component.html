@@ -1,43 +1,80 @@
-    <div class="form-container">
-      <div class="logo flex">
-        <img src="assets/app-logo.png" alt="logo" />
+<div class="form-container">
+  <div class="logo flex">
+    <img src="assets/app-logo.png" alt="logo" />
+  </div>
+
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <h3>Register Now</h3>
+    <div class="flex flex-row gap-2">
+      <input
+        type="text"
+        formControlName="firstName"
+        required
+        placeholder="Enter your First name"
+        class="input-field"
+      />
+      <input
+        type="text"
+        formControlName="lastName"
+        required
+        placeholder="Enter your Last name"
+        class="input-field"
+      />
+    </div>
+    <input
+      type="email"
+      formControlName="email"
+      required
+      placeholder="Enter your Email"
+      class="input-field"
+    />
+    <div class="flex flex-row gap-2">
+      <div class="w-full">
+        <select
+          formControlName="department"
+          (change)="onDepartmentChange($event)"
+          required
+          class="select-one"
+        >
+          <option *ngFor="let dept of departments" [value]="dept.name">
+            {{ dept.name }}
+          </option>
+        </select>
       </div>
 
-      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-        <h3>Register Now</h3>
-
-        <input
-          type="text"
-          formControlName="firstName"
-          required
-          placeholder="Enter your First name"
-        />
-        <input
-          type="text"
-          formControlName="lastName"
-          required
-          placeholder="Enter your Last name"
-        />
-        <input
-          type="email"
-          formControlName="email"
-          required
-          placeholder="Enter your Email"
-        />
-        <input
-          type="password"
-          formControlName="password"
-          required
-          placeholder="Enter your Password"
-        />
-        <input
-          type="password"
-          formControlName="cpassword"
-          required
-          placeholder="Confirm your Password"
-        />
-        <input type="submit" value="Next" class="form-btn" />
-        <p>Already have an account?</p>
-        <a href="/login">Login Now</a>
-      </form>
+      <div class="w-full">
+        <select formControlName="program" required class="select-one">
+          <option
+            *ngFor="let program of selectedDepartmentPrograms"
+            [value]="program"
+          >
+            {{ program }}
+          </option>
+        </select>
+      </div>
     </div>
+    <select formControlName="gender" class="w-full" required>
+      <option value="" disabled selected>Select your gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+
+    <input
+      type="password"
+      formControlName="password"
+      required
+      placeholder="Enter your Password"
+      class="input-field"
+    />
+    <input
+      type="password"
+      formControlName="cpassword"
+      required
+      placeholder="Confirm your Password"
+      class="input-field"
+    />
+    <input type="submit" value="Next" class="form-btn" />
+    <p>Already have an account?</p>
+    <a href="/login">Login Now</a>
+  </form>
+</div>

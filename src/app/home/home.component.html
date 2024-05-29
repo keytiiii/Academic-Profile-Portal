@@ -1,25 +1,37 @@
 <div class="wrapper">
   <div class="profile">
     <img src="assets\icon.png" id="pfp" />
-    <h1 class="name">First Name MI. Surname, Prefix.</h1>
+    <h1 class="name text-xl">{{ user?.firstName }} {{ user?.lastName }}</h1>
     <div class="pfp-border"></div>
-    <h3 class="program">Program</h3>
+    <h3 class="program">{{ user?.program }}</h3>
   </div>
   <div class="center-border"></div>
-  <div class="featured-container">
-    <h1 id="fp-title">Featured Project</h1>
+  <div *ngIf="portfolio; else noPortfolio" class="featured-container">
+    <h1 id="fp-title" class="font-bold text-2xl">Featured Project</h1>
     <div class="proj">
-      <div class="proj-img"></div>
+      <div class="proj-img">
+        <img
+          src="https://pbs.twimg.com/media/GB4X3CTaoAAgmS8.jpg:large"
+          class="border border-blue-300 rounded-xl"
+        />
+      </div>
       <div class="proj-info">
-        <div class="proj-name">Project Name</div>
-        <div class="proj-date"></div>
+        <div class="proj-name">{{ portfolio.projectTitle }}</div>
+
         <div class="proj-desc">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          {{ portfolio.projectDesc }}
         </div>
+        <span class="underline pt-2">{{ portfolio.projectGit }}</span>
       </div>
     </div>
   </div>
 </div>
+
+<ng-template #noPortfolio>
+  <div>
+    <h2 class="text-lg font-semibold">No Featured Project Available</h2>
+    <p class="text-base">
+      Please add a project in portfolio tab to feature it here.
+    </p>
+  </div>
+</ng-template>
