@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.porfolio {
+    display: flex;
+    margin-left: 280px;
+}

@@ -11,6 +11,7 @@ import { MainLayoutComponent } from './main-layout.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { authGuard } from './auth.guard';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -39,6 +40,11 @@ export const routes: Routes = [
       {
         path: 'profile',
         component: ProfileComponent,
+        canActivate: [authGuard],
+      },
+      {
+        path: 'about-us',
+        component: AboutUsComponent,
         canActivate: [authGuard],
       },
       { path: 'home', component: HomeComponent, canActivate: [authGuard] },
