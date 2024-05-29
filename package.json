@@ -23,6 +23,7 @@
     "@prisma/client": "^5.14.0",
     "ngx-toastr": "^18.0.0",
     "rxjs": "~7.8.0",
+    "toastr": "^2.1.4",
     "tslib": "^2.3.0",
     "typeface-poppins": "^1.1.13",
     "zone.js": "~0.14.3"

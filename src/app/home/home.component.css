@@ -57,7 +57,7 @@
   animation: fadeInContainer 3s forwards;
   background-color: #6284db;
   border-radius: 20px;
-  flex-grow: 1;
+  flex-grow: .5;
   flex-direction: column;
 }
 
@@ -71,21 +71,24 @@
 
 .proj {
   display: flex;
-}
-
-.proj-img {
-  margin: 20px;
+  justify-content: center;
 }
 
 .proj-info {
   display: flex;
-  margin: 25px 25px 25px 0;
+  margin: 25px;
   flex-direction: column;
 }
 
 .proj-name {
-  font-size: large;
+  font-size: 20px;
   font-family: Poppins;
   font-weight: 700;
   margin: 10px 0 10px 0;
+}
+
+.proj-desc {
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 500;
 }
